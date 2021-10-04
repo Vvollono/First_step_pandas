@@ -28,8 +28,8 @@ print(data[data.temp == data.temp.max()])
 
 monday = data[data.day == "Monday"]
 print(monday.condition)
-# # Get the temperature of Monday but converted in Fahrenheit
-# print(monday.temp * 1.800 + 32)
+#Get the temperature of Monday but converted in Fahrenheit
+print(monday.temp * 1.800 + 32)
 
 #Create a dataframe from scratch
 data_dict ={
