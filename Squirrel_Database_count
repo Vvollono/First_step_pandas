@@ -1,0 +1,11 @@
+squirrel = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+gray = len(squirrel[squirrel["Primary Fur Color"] == "Gray"])
+cinnamon = len(squirrel[squirrel["Primary Fur Color"] == "Cinnamon"])
+black = len(squirrel[squirrel["Primary Fur Color"] == "Black"])
+color_dict = {
+    "Fur Colors": ["Gray", "Cinnamon", "Black"],
+    "Count": [gray, cinnamon, black]
+
+}
+squirrels = pandas.DataFrame(color_dict)
+squirrels.to_csv("Count_prim_color.csv")
